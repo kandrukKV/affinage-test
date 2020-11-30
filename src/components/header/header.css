@@ -1,0 +1,141 @@
+.header__wrap {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url('../../img/backgroung1.jpg');
+  background-position: left top;
+  background-size: auto 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.header__decor {
+  display: none;
+  background-image: url("../../img/background_mobile.jpg");
+  background-position: center;
+}
+
+.header__content {
+  width: 100%;
+  max-width: 980px;
+  background-color: #202020;
+}
+
+.header__content-top {
+  display: flex;
+  margin-bottom: 190px;
+  padding: 40px 100px 0 83px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.header__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  max-width: 480px;
+  font-family: "YesevaOne", sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 80px;
+  color: #F5F5F5;
+}
+
+.header__content {
+  position: relative;
+}
+
+.header__content-center {
+  display: flex;
+  margin-bottom: 125px;
+}
+
+.header__years {
+  margin: 0 0 0 80px;
+  padding: 0;
+  width: 302px;
+  font-family: "YesevaOne", sans-serif;
+  font-size: 64px;
+  line-height: 58px;
+  color: #F5F5F5;
+  transform: rotate(270deg);
+}
+
+.header__desc {
+  margin-left: -170px;
+  width: 530px;
+}
+
+.header__desc p{
+  font-family: "Helvetica", sans-serif;
+  font-weight: 500;
+  max-width: 520px;
+  font-size: 16px;
+  line-height: 29px;
+  color: #F5F5F5;
+}
+
+.header__logo {
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+}
+
+@media (max-width: 1023px) {
+
+  .header__wrap {
+    flex-wrap: wrap;
+    background-image: none;
+  }
+
+  .header__decor {
+    width: 100%;
+    text-align: center;
+    max-height: 125px;
+  }
+
+  .header__decor {
+    display: block;
+  }
+
+  .header__content {
+    padding: 32px 20px 0 20px;
+    max-width: 100%;
+    order: 0;
+  }
+
+  .header__content-center {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .header__content-top {
+    padding: 0;
+    margin-bottom: 68px;
+  }
+
+  
+  .header__years {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    transform: rotate(0);
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .header__desc {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .header__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .header__logo {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.header__search {
+  position: relative;
+}
+
+.header__search-btn {
+  width: 18px;
+  height: 18px;
+  background-image: url("../../img/search.png");
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.header__search-input {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  color: #BFBFBF;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
