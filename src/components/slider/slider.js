@@ -22,10 +22,15 @@ class Slider extends PureComponent {
     this.clickSliderItemHandle = this.clickSliderItemHandle.bind(this);
     this.tuochStartHandle = this.tuochStartHandle.bind(this);
     this.tuochEndHandle = this.tuochEndHandle.bind(this);
+    this.sesize = this.resize.bind(this);
   }
 
   componentDidMount() {
+    window.addEventListener("resize", this.sesize);
+    this.resize();
+  }
 
+  resize() {
     const screenType = window.innerWidth > MAX_MOBILE_RES ? ScreenTypes.DESCTOP : ScreenTypes.MOBILE;
     this.setState({screenType})
   }
