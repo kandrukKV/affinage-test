@@ -1,0 +1,101 @@
+.museums {
+  padding-bottom: 100px;
+}
+
+.museums__title {
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid #E5E5E5;
+}
+
+.museums__map {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  height: 514px;
+  background-image: url("../../img/map.jpg");
+  background-position: center center;
+}
+
+.museums__map img {
+  width: 1200px;
+}
+
+.museums__map-pin {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  z-index: 1;
+}
+
+.museums__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+.museums__item:not(:first-child) {
+  padding-left: 40px;
+  border-left: 1px solid #E5E5E5;
+}
+
+.museums__pin {
+  margin-right: 15px;
+}
+
+.museums__name {
+  margin: 0 0 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.museums__name a {
+  text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #202020;
+}
+
+.museums__adress {
+  max-width: 200px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #BFBFBF;
+}
+
+@media (max-width: 1023px) {
+  .museums {
+    padding-bottom: 60px;
+  }
+
+  .museums__title {
+    padding: 60px 20px 40px 20px;
+  }
+
+  .museums__map {
+    margin-bottom: 40px;
+  }
+
+  .museums__list {
+    flex-wrap: wrap;;
+  }
+
+  .museums__item {
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+
+  .museums__item:not(:first-child) {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 40px;
+    border-left: none;
+    border-top: 1px solid #E5E5E5;
+  }
+}

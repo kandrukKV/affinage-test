@@ -1,3 +1,7 @@
+.nav__wrap {
+  position: relative;
+}
+
 .nav {
   display: flex;
 }
@@ -30,8 +34,13 @@
   background-repeat: no-repeat;
   border: 0;
   cursor: pointer;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   background-color: transparent;
+}
+
+.hamburger--open {
+  background-image: url("../../img/icon-close.svg");
 }
 
 @media (max-width: 1023px) {
@@ -40,6 +49,32 @@
   }
 
   .nav {
+    position: absolute;
+    right: 35px;
+    top: 20px;
     display: none;
+  }
+
+  .nav--open {
+    display: flex;
+  }
+
+  .nav__list {
+    padding: 10px 10px 0 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    flex-direction: column;
+    width: 150px;
+  }
+
+  .nav__item {
+    margin-bottom: 25px;
+  }
+
+  .nav__item a {
+    color: #202020;
+    font-size: 16px;
+    line-height: 16px;
   }
 }

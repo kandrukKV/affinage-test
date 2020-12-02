@@ -514,7 +514,6 @@ img {
   display: block;
 }
 
-
 .creation__detail {
   display: flex;
   margin-bottom: 60px;
@@ -882,7 +881,4 @@ img {
     margin-right: 0;
     margin-bottom: 20px;
   }
-
-
-
 }

@@ -1,0 +1,78 @@
+.biography {
+  padding: 100px 0;
+}
+
+.biography__title {
+  margin-right: 85px;
+}
+
+.biography__wrapp {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4C4C4C;;
+}
+
+.biography__desc {
+  margin: 0 0 20px 0;
+  padding-left: 80px;
+}
+
+.biography__list {
+  padding: 0;
+  list-style: none;
+}
+
+.biography__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.biography__data {
+  margin-right: 25px;
+  min-width: 55px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #BFBFBF;
+}
+
+.biography__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1023px) {
+  .biography {
+    padding: 60px 0;
+  }
+
+  .biography__wrapp {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .biography__title {
+    margin-bottom: 20px;
+  }
+
+  .biography__desc {
+    padding-left: 0;
+  }
+
+  .biography__item {
+    flex-wrap: wrap;
+  }
+
+  .biography__data {
+    margin-bottom: 20px;
+  }
+
+  .biography__bottom {
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+}

@@ -11,11 +11,8 @@ const Header = () => {
       <div className="header__wrap">
         <div className="header__content">
           <div className="header__content-top">
-
             <Search/>
-
             <Navigation/>
-
           </div>
           <div className="header__content-center">
             <h3 className="header__years">1878-1927</h3>
@@ -25,7 +22,9 @@ const Header = () => {
             </div>
           </div>
           <div className="header__logo">
-            <img src={logo} width="60" height="60" alt="Логотип"/>
+            <a href="http://affinage.ru/" target="_blank" rel="noreferrer">
+              <img src={logo} width="60" height="60" alt="Логотип"/>
+            </a>
           </div>
         </div>
         <div className="header__decor"></div>
